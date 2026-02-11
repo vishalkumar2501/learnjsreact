@@ -23,34 +23,42 @@
 // 6.Symbol = ye ek unique identifier hota hai jo ki symbol function se banta hai
 // example ===>> let sym1 = Symbol('description');  ye sym1 ek unique symbol ban jayega jiska description 'description' hoga
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//===========================================================================================================
 
 // 2. Non-primitive data types (reference data types)
 //------------------------------------------------------------------------------
 // inko copy kerne per humko ek reference milta hai jisse hum uski value change kar sakte hai
 // example ===>> array[] , object{} , function ()
+
+//=============================================================================================================
+// Dyanimic typing kya hota hai?
+//------------------------------------------------------------------
+//javascript me static typing nahi hota hai yaha per dynamics typing hota hai jiska matlab hai ki hum 
+// data ko change ker sakte hai  kyuki yaha per dynamics data type hota hai
+
+
+// let a =12;
+// a = true;
+// a="vshal kumar";
+// a= null;
+// a = undefined;
+// a=[];
+// a={};
+// a=functiont(){}
+
+// types of quirks (eg  type ogf null === 'object')
+
+// Types coercion (== vs ===)
+//-----------------------------------------------------------
+//type coercion ek aaisa concept hai jisme  humko ek type automatically convert ho jayega  jaise 
+//"5"+ 5 = "55"  yaha per number 5 string me convert ho gaya hai concatination ho gaya hai
+//"5"- 5 = 0   yaha per string 5 number me convert ho gaya hai
+
+
+// Truthy    vs  falsy values
+//------------------------------------------------------------
+// truthy value wo hoti hai jisko boolean me convert kerne per true aata hai
+// falsy value wo hoti hai jisko boolean me convert kerne per false aata hai
+// falsy values ===>> 0 , "" , null , undefined , NaN , false
+// truthy values ===>> "hello" , 12 , [] , {} , function(){}
+//============================================================================================================
