@@ -164,3 +164,78 @@
 // console.log(sr);
 
 //---------------------------------------------------------------------------------
+// ------------------ALL DESTRUCTURING OF ENTIRE CONCEPT--------------
+
+// 1️⃣ Normal Tarika (Without Destructuring)
+// let arr = [10, 20, 30];
+
+// let a = arr[0];
+// let b = arr[1];
+// let c = arr[2];
+
+// console.log(a, b, c);
+// 👉 Thoda lamba ho gaya na?
+
+
+// 2️⃣ Destructuring Tarika (Short & Clean)
+// let arr = [10, 20, 30];
+
+// let [a, b, c] = arr;
+
+// console.log(a, b, c);
+// 🔥 Bas! Ye hi hai destructuring. output same
+
+
+// 3️⃣ Skip Karna (Kisi Value Ko Ignore Karna)
+// let arr = [10, 20, 30];
+
+// let [a, , c] = arr;
+
+// console.log(a, c);
+
+
+// 👉 Output: 10 30
+// 👉 Beech wala 20 skip ho gaya.
+
+// 4️⃣ Default Values
+// Agar array me value na ho to default set kar sakte ho:
+
+// let arr = [10];
+// let [a, b = 50] = arr;
+
+// console.log(a, b);
+
+// 👉 Output: 10 50
+
+
+// 5️⃣ Rest Operator (...) ⭐ Important
+// let arr = [10, 20, 30, 40];
+// let [a, b, ...rest] = arr;
+
+// console.log(a);      // 10
+// console.log(b);      // 20
+// console.log(rest);   // [30, 40]
+
+// 👉 ...rest bachi hui values ko ek naye array me daal deta hai.
+
+
+// 6️⃣ Swap Variables (Most Popular Use 🔥)
+// Destructuring se swap bhi kar sakte ho bina temp variable ke:
+
+// let a = 10;
+// let b = 20;
+// [a, b] = [b, a];
+// console.log(a, b);
+
+// 👉 Output: 20 10
+// Ye interview me bahut pucha jata hai 😉
+
+
+// 7️⃣ Function Return Se Destructuring
+// function getValues() {
+//     return [1, 2];
+// }
+
+// let [a, b] = getValues();
+
+// console.log(a, b);
